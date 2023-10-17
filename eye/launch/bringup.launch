@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- LAUNCH CAMERA node -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+
+    <!-- ARUCO DETECTOR -->
+    <node name="vision" pkg="eye" type="vision.py" output="screen"/>
+
+</launch>
